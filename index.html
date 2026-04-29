@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Camada escura para melhorar leitura sobre o fundo dinâmico -->
+    <div class="overlay" aria-hidden="true"></div>
 
+    <main class="dashboard" aria-label="Painel com três iframes">
+      <section class="card card-medicina">
+        <h2 class="card-title">MEDICINA</h2>
+        <iframe
+          src="https://renanck.github.io/medicina/index.html"
+          title="Medicina"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </section>
+
+      <section class="card card-timer destaque">
+        <h2 class="card-title">TIMER</h2>
+        <iframe
+          src="https://renanck.github.io/timer/"
+          title="Timer"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </section>
+
+      <section class="card card-youtube card-grande">
+        <h2 class="card-title">YOUTUBE MÚSICA</h2>
+        <iframe
+          src="https://renanck.github.io/youtubemusica/index.html"
+          title="YouTube Música"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
